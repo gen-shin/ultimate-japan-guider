@@ -7,3 +7,5 @@ Meanwhile, data storage and process would be shifted to using AWS API GateWay, L
 
 To make it run at your local environment, after `git clone`, you should run `npm install` to get the needed packages.
 Use `npm run start` to start the web application.
+
+![Demo](https://user-images.githubusercontent.com/55442994/87072734-40016d00-c257-11ea-9c88-dbad70703f54.gif)
