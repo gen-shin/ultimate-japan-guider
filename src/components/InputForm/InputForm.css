@@ -1,0 +1,10 @@
+.input-form {
+    background-color: rgba(0,0,0,.1);
+    padding: 30vh 0 20vh;
+    margin-top: -20vh;
+}
+
+.input-form-description {
+    font-family: "Lato", sans-serif;
+    padding: 10vh;
+}
