@@ -12,3 +12,7 @@
 
 npm-debug.log*
 
+# host with firebase
+hosting.*
+.firebaserc
+firebase.json

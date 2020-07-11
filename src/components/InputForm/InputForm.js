@@ -1,4 +1,4 @@
-import './InputForm.css'
+import './InputForm.css';
 import React from 'react';
 import 'antd/dist/antd.css';
 import {
@@ -9,9 +9,9 @@ import {
   Button,
   Cascader,
   DatePicker,
-  Modal
+  Modal,
 } from 'antd';
-import { db } from '../../dbConfig/firebase'
+import { db } from '../../dbConfig/firebase';
 
 const { RangePicker } = DatePicker;
 const { TextArea } = Input;
@@ -22,8 +22,8 @@ const formLayout = {
   },
   wrapperCol: {
     span: 10,
-  }
-}
+  },
+};
 const tailLayout = {
   wrapperCol: {
     offset: 4,
@@ -33,46 +33,46 @@ const tailLayout = {
 
 class InputForm extends React.Component {
   state = {
-    startDate: "",
-    endDate: "",
-    destination: "",
-    remarks: "",
-  }
+    startDate: '',
+    endDate: '',
+    destination: '',
+    remarks: '',
+  };
 
   onClick = () => {
     // TODO: store request with userID as key
-    db.collection("travellerRequest").doc("userID").set(this.state)
+    db.collection('USER_REQUESTS')
+      .doc(Date.now().toString())
+      .set(this.state)
       .then(function () {
         Modal.success({
           content: 'We have successfully received your request.',
-        })
+        });
       })
+      // eslint-disable-next-line no-unused-vars
       .catch(function (error) {
         Modal.error({
           title: 'An error happened',
           content: 'Please try again later.',
-        })
+        });
       });
-  }
+  };
 
   render() {
     return (
       <div className="input-form">
         <Row>
           <Col span={18} push={6}>
-            <Form
-              {...formLayout}
-              layout="horizontal"
-            >
+            <Form {...formLayout} layout="horizontal">
               <Form.Item label="Date">
-                <RangePicker onChange={
-                  value => {
+                <RangePicker
+                  onChange={(value) => {
                     this.setState({
                       startDate: value[0].toString(),
-                      endDate: value[1].toString()
-                    })
-                  }
-                } />
+                      endDate: value[1].toString(),
+                    });
+                  }}
+                />
               </Form.Item>
 
               <Form.Item label="Destination">
@@ -90,23 +90,24 @@ class InputForm extends React.Component {
                       value: 'nagoya',
                       label: 'Nagoya',
                     },
-                  ]} onChange={
-                    value => {
-                      this.setState({
-                        destination: value.toString()
-                      })
-                    }
-                  }
+                  ]}
+                  onChange={(value) => {
+                    this.setState({
+                      destination: value.toString(),
+                    });
+                  }}
                 />
               </Form.Item>
 
               <Form.Item label="Remarks">
-                <TextArea rows={4} onChange={e => {
-                  this.setState({
-                    remarks: e.target.value
-                  })
-                }
-                } />
+                <TextArea
+                  rows={4}
+                  onChange={(e) => {
+                    this.setState({
+                      remarks: e.target.value,
+                    });
+                  }}
+                />
               </Form.Item>
 
               <Form.Item {...tailLayout}>
@@ -116,13 +117,11 @@ class InputForm extends React.Component {
               </Form.Item>
             </Form>
           </Col>
-          <Col span={6} pull={18}>
-          </Col>
+          <Col span={6} pull={18}></Col>
         </Row>
       </div>
     );
-
   }
-};
+}
 
 export default InputForm;

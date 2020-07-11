@@ -1,0 +1,38 @@
+{
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "env": {
+        "browser": true,
+        "es2020": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "parser": "babel-eslint",
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "rules": {
+        "no-unused-vars": "warn",
+        "prettier/prettier": [
+            "error",
+            {
+              "singleQuote": true
+            }
+          ],
+        "import/prefer-default-export": "off"
+    }
+}
