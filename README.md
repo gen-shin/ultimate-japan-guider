@@ -1,7 +1,8 @@
 # ultimate-Japan-guider-webclient
 Aim of this project is to build a matching platform for travellers and local guiders.
 
-Right now, It has only one single function, which is get the requests from users and store it in a FireBase database.
+Right now, It has only one single function, which is get the requests from users and store it in a FireBase database. And you can try it out at https://ultimate-japan-guider.web.app/.
+
 In the next step, functions like user sign-up and login authentication, profile page for local guiders, communication channel between travellers and local guiders, experience scoring etc. would be added.
 Meanwhile, data storage and process would be shifted to using AWS API GateWay, Lambda and Dynamo DB.
 

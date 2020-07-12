@@ -1,5 +1,7 @@
+@import '../../constants/base.scss';
+
 .input-form {
-    background-color: rgba(0,0,0,.1);
+    background-color: $main-background-color;
     padding: 30vh 0 20vh;
     margin-top: -20vh;
 }
