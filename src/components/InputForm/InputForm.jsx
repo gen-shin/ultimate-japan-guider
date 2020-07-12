@@ -1,4 +1,4 @@
-import './InputForm.css';
+import './InputForm.scss';
 import React from 'react';
 import 'antd/dist/antd.css';
 import {
