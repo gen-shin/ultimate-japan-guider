@@ -26,22 +26,22 @@
   text-transform: uppercase;
 
   backface-visibility: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 
   &--main {
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
 
     animation: moveInLeft 1s ease-out;
   }
 
   &--sub {
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
+    letter-spacing: 1.74rem;
 
     animation: moveInRight 1s ease-out;
   }
@@ -50,7 +50,7 @@
 .footer {
   height: 95vh;
   margin-top: -95vh;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   background-image: linear-gradient(
     to right bottom,
     rgba($color-primary-light, 0.8),

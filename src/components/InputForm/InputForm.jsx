@@ -60,6 +60,11 @@ class InputForm extends React.Component {
   render() {
     return (
       <div className="input-form">
+        <div className="u-center-text">
+          <h2 className="heading-secondary">
+            Send a request to our local guiders
+          </h2>
+        </div>
         <Row>
           <Col span={18} push={6}>
             <Form {...formLayout} layout="horizontal">
