@@ -1,14 +1,13 @@
 import React from 'react';
 import { InputForm } from '../InputForm';
-import './App.css';
 
 const App = () => (
   <div>
     <header className="header">
-      <div className="text-box">
+      <div className="header__text-box">
         <h1 className="heading-primary">
-          <span className="heading-primary-main">Ultimate</span>
-          <span className="heading-primary-sub">your trip at Japan</span>
+          <span className="heading-primary--main">Ultimate</span>
+          <span className="heading-primary--sub">your trip at Japan</span>
         </h1>
       </div>
     </header>
