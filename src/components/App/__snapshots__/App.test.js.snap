@@ -6,18 +6,18 @@ exports[`App renders without crashing 1`] = `
     className="header"
   >
     <div
-      className="text-box"
+      className="header__text-box"
     >
       <h1
         className="heading-primary"
       >
         <span
-          className="heading-primary-main"
+          className="heading-primary--main"
         >
           Ultimate
         </span>
         <span
-          className="heading-primary-sub"
+          className="heading-primary--sub"
         >
           your trip at Japan
         </span>
