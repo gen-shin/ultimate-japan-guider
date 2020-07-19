@@ -1,4 +1,5 @@
 @import 'sass/abstract/variables';
+@import 'sass/abstract/mixins';
 
 @import 'sass/base/base';
 @import 'sass/base/animations';
@@ -8,3 +9,4 @@
 @import 'components/App/App.scss';
 @import 'components/InputForm/InputForm.scss';
 @import 'components/parts/Video/Video.scss';
+@import 'components/parts/MainMenu/MainMenu.scss';

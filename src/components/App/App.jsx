@@ -1,9 +1,10 @@
 import React from 'react';
 import { InputForm } from '../InputForm';
-import Video from '../parts/Video';
+import { Video, MainMenu } from '../parts';
 
 const App = () => (
   <div>
+    <MainMenu />
     <header className="header">
       <Video />
       <div className="header__text-box">
