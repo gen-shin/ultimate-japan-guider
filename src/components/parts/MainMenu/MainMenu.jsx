@@ -16,7 +16,7 @@ const MainMenu = () => {
         <ul className="navigation__list">
           <li className="navigation__item">
             <a href="#section" className="navigation__link">
-              About Natous
+              About Us
             </a>
           </li>
           <li className="navigation__item">

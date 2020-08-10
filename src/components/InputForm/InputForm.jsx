@@ -11,6 +11,7 @@ import {
   Modal,
 } from 'antd';
 import { db } from '../../dbConfig/firebase';
+import BrowserNotification from 'browser-notification-for-web-app';
 
 const { RangePicker } = DatePicker;
 const { TextArea } = Input;
@@ -46,6 +47,10 @@ class InputForm extends React.Component {
       .then(function () {
         Modal.success({
           content: 'We have successfully received your request.',
+        });
+        BrowserNotification.notify({
+          title: 'Success',
+          message: 'We have successfully received your request.',
         });
       })
       // eslint-disable-next-line no-unused-vars
