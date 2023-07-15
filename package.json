@@ -45,7 +45,7 @@
     "firebase": "^7.15.5",
     "node-sass": "^4.14.1",
     "prettier": "^2.0.5",
-    "react-scripts": "3.4.1"
+    "react-scripts": "5.0.1"
   },
   "jest": {
     "snapshotSerializers": [
